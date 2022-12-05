@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StudyApp</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/studyPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+       <!-- Add additional services that you want to use -->
+       <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+</head>
+<body>
+    <!-- hidden audio for alarm -->
+    <audio controls id="alarm">
+        <source src="../public/audio/studyAlarm.mp3"></source>
+    </audio>
+    <div class="study-bg">
+        <img src="../public/icons/alarm.png">
+    </div>
+    <div class="container">
+        <a href="mainWindow.html" onclick = "updateTimerDB()" class="return-button">
+            <img src="../public/icons/back.png" style="width: 55px;">
+            <span>Return</span>
+        </a>
+        <h1 id="heading">BEGIN STUDYING ⏰</h1>
+        <p id="subMessage">Study using the Pomodoro Technique! 🍅</p>
+        <div class="card">
+            <a href ="#" id ="alarmButton" onclick ="toggleAlert(1)" class="timerAlarm">🔊</a>
+            <a href ="#" id ="notificationButton" onclick ="toggleAlert(2)" class="timerNotification">🔔</a>
+            <div class="card-body">
+                <div class="btn-group">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-success top-buffer miscBtn dropdown-toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🚀 Select Task </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <button onclick = "setTimer(25)" class="dropdown-item">✍ Regular Task | 25 minutes</button>
+                            <button onclick = "setTimer(45)" class="dropdown-item">📚 Extended Task | 45 minutes</button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-info top-buffer miscBtn dropdown-toggle dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">⏳ Break </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <button class="dropdown-item" onclick="breakTimer(5)">🥪 Short Break | 5 minutes</button>
+                            <button class="dropdown-item" onclick="breakTimer(15)">😴 Long Break | 15 minutes</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="pomodoro-timer"></div>
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+                <br>
+                <button onclick = "startTimer()" id="startButton"class="btn btn-info miscBtn">&#11208 Start</button>
+                <button onclick = "pauseTimer()" id="stopButton" class="btn btn-danger miscBtn">&#10074&#10074 Pause</button>
+                <button onclick = "resetTimer()" class="btn btn-outline-warning miscBtn">↺ Reset</button>
+                <br>
+                <br>
+                <p>Total time studied today:</p>
+                <p id="timeStudied">00:00</p>
+                <br>
+                <p>Total time on break today:</p>
+                <p id="timeOnBreak">00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--javascript files for bootstrap-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- study page script -->
+    <script src="../scripts/studyPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+html
+{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(79,125,236,1) 0%, rgba(142,84,233,1) 100%);
+}
+
+body
+{
+    overflow-x: hidden;
+    background-color: transparent;
+}
+
+p
+{
+    display: inline-block;
+}
+
+a span
+{
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-left: 0;
+}
+
+a span:hover
+{
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-left: 0;
+}
+
+#alarm
+{
+    display: none;
+}
+
+#pomodoro-timer
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+#myProgress 
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 590px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+}
+  
+#myBar
+{
+    width: 0%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #5cb85c;
+    margin-bottom: 20px;
+    transition: width 2s;
+}
+
+.timerAlarm, .timerAlarm:focus
+{
+    position: absolute;
+    top: 30px;
+    right: 85px;
+    transition: transform .2s;
+}
+
+.timerNotification, .timerNotification:focus
+{
+    position: absolute;
+    top: 30px;
+    right: 50px; 
+    transition: transform .2s;
+}
+
+.timerAlarm:hover, .timerNotification:hover
+{
+    text-decoration: none !important;
+    transform: scale(1.2);
+}
+
+.study-bg
+{
+    z-index: -1;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 63%;
+}
+
+.return-button 
+{
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.return-button:hover
+{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+

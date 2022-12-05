@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StudyApp</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+</head>
+<body onload=display_clock();>
+    <div class="backdrop-gradient"></div>
+    <p id="clock"></p>
+    <div class="container">
+        <h1 id="heading"></h1>
+        <p style="color: white;">What would you like to do?</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card top-buffer hoverEffect">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Reminders 📝</h5>
+                    <p class="card-text">Add, remove, and edit reminders.</p>
+                    <a href="remindersPage.html" class="btn btn-warning cardBtn stretched-link">Go</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card top-buffer hoverEffect">
+                <div class="card-body">
+                    <h5 class="card-title">Study Playlist 🎧</h5>
+                    <p class="card-text">Access your music through Spotify®</p>
+                    <a href="../pages/musicPage.html" class="btn btn-warning cardBtn stretched-link">Go</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card top-buffer hoverEffect">
+                <div class="card-body">
+                    <h5 class="card-title">Begin Studying ⏰</h5>
+                    <p class="card-text">Start a timed study session.</p>
+                    <a href="../pages/studyPage.html" class="btn btn-warning cardBtn stretched-link">Go</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card top-buffer hoverEffect">
+                <div class="card-body">
+                    <h5 class="card-title">Analytics 📈</h5>
+                    <p class="card-text">Monitor and track study habits.</p>
+                    <a href="../pages/analyticsPage.html" class="btn btn-warning cardBtn stretched-link">Go</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom">
+        <a href="#" class="btn miscBtn" id="settingsBtn">
+            <img src="../public/icons/settings.png" style="width: 50px; margin-right:0;">
+            <span>Settings</span>
+        </a>
+        <a class="btn miscBtn" id="wordBtn">
+            <img src="../public/icons/docs.png" style="width: 30px;">
+            <span>Docs</span>
+        </a>
+        <a class="btn miscBtn" id="sheetsBtn">
+            <img src="../public/icons/sheets.png" style="width: 30px;">
+            <span>Sheets</span>
+        </a>
+        <a class="btn miscBtn" id="pptBtn">
+            <img src="../public/icons/slides.png" style="width: 30px;">
+            <span>Slides</span>
+        </a>
+        <a class="btn miscBtn" id="portalBtn">
+            <img src="../public/icons/portal.png" style="width: 40px; margin-right:0;">
+            <span>Portal</span>
+        </a>
+        <a href="../pages/loginPage.html" id="logoutBtn" class="btn miscBtn">
+            <img src="../public/icons/logoff.png" style="width: 40px; margin-right:0;">
+            <span>Logout</span>
+        </a>
+    </nav>
+
+    <!--javascript files for bootstrap-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!-- welcome script -->
+    <script src="../scripts/welcomeMessage.js"></script>
+    <!-- clock script -->
+    <script src="../scripts/clock.js"></script>
+</body>
+</html>

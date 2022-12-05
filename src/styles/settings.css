@@ -1,0 +1,21 @@
+.settingsForm
+{
+    margin-top: 30px;
+    width: 70%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.settingsCard
+{
+    box-shadow: -3px 4px 10px #4a4a4a77;
+}
+
+html
+{
+    /* if the gradient starts repeating just make this height value larger to cover the gap */
+    height: 620px;
+    /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%); */
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(79,125,236,1) 0%, rgba(142,84,233,1) 100%);
+}

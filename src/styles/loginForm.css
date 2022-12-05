@@ -1,0 +1,79 @@
+.loginForm
+{
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loginCard
+{
+    box-shadow: -3px 4px 10px #4a4a4a77;
+}
+
+.loginBtn
+{
+    width: 70%;
+}
+
+.form-group.row
+{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+}
+
+.loginPage
+{
+    background-color: transparent;
+}
+
+body
+{
+    background-color: transparent;
+}
+
+html
+{
+    /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%); */
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(79,125,236,1) 0%, rgba(142,84,233,1) 100%);
+}
+
+#signupLink
+{
+    color: #b5d3f3;
+}
+
+#signupLink:hover
+{
+    color: #d9e5f1;
+}
+
+p
+{
+    color: white;
+}
+
+#heading
+{
+    color: white;
+}
+
+#loadingIcon
+{
+    height: 15px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#errorMsg:hover, #successMsg:hover 
+{
+    cursor: pointer;
+}

@@ -1,0 +1,157 @@
+h1, h3, p
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+html
+{
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+body
+{
+    background-color: transparent!important;
+}
+
+a span {
+    max-width: 0;
+    -webkit-transition: max-width 1s;
+    transition: max-width 1s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;    
+    color: black;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+a:hover span {
+    max-width: 7rem;
+}
+
+#heading
+{
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+#subHeading
+{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#subMessage
+{
+    color: white;
+    display: inline-block;
+}
+
+.container
+{
+    text-align: center;
+}
+
+.cardBtn
+{
+    width: 100%;
+}
+
+.top-buffer
+{
+    margin-top: 25px;
+}
+
+.miscBtn
+{
+    margin-left: 15px; 
+    margin-right: 15px;
+}
+
+.btn-outline-info
+{
+    background-color: white;
+}
+
+.btn-warning, .btn-outline-warning:hover
+{
+    color: white !important;
+}
+
+.hoverEffect
+{
+    transition: transform .2s;
+    box-shadow: 2px 2px 2px #2323234f;
+}
+
+.hoverEffect:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px #2323234f;
+}
+
+.tooltip 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext::after 
+{
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.fixed-bottom
+{
+    height: 100px;
+    background-color: #f5f5f5;
+    color: white;
+}
+
+.backdrop-gradient
+{
+    z-index: -1;
+    position: absolute;
+    margin-top: -30px;
+    height: 420px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(103,144,245,1) 0%, rgba(146,101,234,1) 62%, rgba(194,84,233,1) 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#clock
+{
+    display: none;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

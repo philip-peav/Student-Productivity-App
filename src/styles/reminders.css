@@ -1,0 +1,156 @@
+li
+{
+    margin-top: 0;
+    text-align: left;
+}
+
+.newItem
+{
+    margin-bottom: 20px;
+}
+
+label
+{
+    text-align: left;
+    width: 100%;
+}
+
+.list-group-item.active
+{
+    border: none;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%);
+}
+
+.list-group-item:first-of-type
+{
+    border-radius: 0 !important;
+}
+
+#remindersTitle
+{
+    color: black;
+}
+
+.card-body
+{
+    text-align: left;
+}
+
+.moreInfo, .moreInfo:focus, .moreInfo:hover
+{
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    outline: none;
+}
+
+.deleteBtn, .deleteBtn:focus
+{
+    float: right;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    outline: none;
+    transition: transform .2s;
+}
+
+.editBtn, .editBtn:focus
+{
+    float: right;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    outline: none;
+    margin-right: 10px;
+    transition: transform .2s;
+}
+
+.deleteBtn:hover, .editBtn:hover
+{
+    float: right;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    transform: scale(1.2);
+}
+
+.hidden
+{
+    display: none;
+}
+
+div.card.card-body
+{
+    border-radius: 0;
+}
+
+.reminders-bg
+{
+    z-index: -1;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 63%;
+}
+
+.return-button 
+{
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.return-button:hover
+{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
+a span
+{
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-left: 0;
+}
+
+a span:hover
+{
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-left: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+    background-color: transparent;
+    
+}
+
+html
+{
+    /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%); */
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(79,125,236,1) 0%, rgba(142,84,233,1) 100%);
+}
+
+#todolist
+{
+    max-height: 322px;
+    overflow-y: scroll;
+}
+
+#errorMsg, #successMsg
+{
+    /* remove the extra spacing since the <br> tag is already in place */
+    margin-top: -10px; 
+}
+
+.alert:hover
+{
+    cursor: pointer;
+}

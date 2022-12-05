@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StudyApp</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/loginForm.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container loginPage">
+        <h1 id="heading">The Study App</h1>
+        <div class="card loginForm">
+            <div class="card-body loginCard">
+                <h1 id="subHeading">SIGN UP 🎓</h1>
+                <!-- flash messages -->
+                <div class="alert alert-danger hidden" id="errorMsg" role="alert">
+                    ❌ Incorrect Password!
+                </div>
+                <div class="alert alert-success hidden" id="successMsg" role="alert">
+                    ✔ Successfully created an account!
+                </div>
+                <form>
+                    <div class="form-group row">
+                        <input type="name" class="form-control txtField" id="inputUsername3" placeholder="👤 Name">
+                    </div>
+                    <div class="form-group row">
+                        <input type="email" class="form-control txtField" id="inputEmail3" placeholder="✉ Email">
+                    </div>
+                    <div class="form-group row">
+                        <input type="password" class="form-control txtField" id="inputPassword3" placeholder="🔑 Password">
+                    </div>
+                    <a href="#" type="button" class="btn btn-outline-primary loginBtn" id="submitBtn">Submit</a>
+                    <!--for spacing-->
+                    <p></p>
+                </form>
+            </div>
+        </div>
+        <br></br>
+        <p>Already have an account? <a href="../pages/loginPage.html" id="signupLink">Login!</a></p>
+    </div>
+
+    <!--javascript files for bootstrap-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../scripts/flashMessages.js"></script>
+    <script src="../scripts/registerPage.js"></script>
+</body>
+</html>

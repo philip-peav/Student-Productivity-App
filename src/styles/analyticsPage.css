@@ -1,0 +1,13 @@
+#averages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#prevAvgStudy, #prevAvgBreak {
+    float: right;
+}
+
+#avgStudy, #avgBreak {
+    float: left;
+}

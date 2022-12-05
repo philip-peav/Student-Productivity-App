@@ -1,0 +1,25 @@
+h5
+{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.card
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 70%;
+}
+
+.spotify-logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 35%;
+    height: 35%;
+}
